@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+<section class="home" id="home">
+  <div class="text">
+      <div class="text">
+      <h1><span>Looking</span> for <br>a ride</h1>
+      <p>Get rides at affordable prices by sharing vehicles.</p>
+      <div class="app-stores">
+        <i class='bx bxl-play-store ico'></i>
+        <i class='bx bxl-apple ico'></i>  
+      </div>
+  </div>
+
+  <div class="form-container">
+      <form action="/bookcars">
+          <div class="input-box">
+              <span>Pick-Up Location</span>
+              <input type="search" placeholder="Enter Pick-Up Location">
+          </div>
+
+          <div class="input-box">
+              <span>Drop Location</span>
+              <input type="search" placeholder="Enter Drop Location">
+          </div>
+
+          <div class="input-box">
+              <span>Journey Date</span>
+              <input type="date">
+          </div>
+          <input type="submit" class="btn" >
+      </form>
+  </div>
+</section>
+
+<!-- Ride -->
+<section class="ride" id="ride">
+  <div class="heading">
+      <span>How It Works</span>
+      <h1>Book with 3 Easy steps</h1>
+  </div>
+  <div class="ride-container">
+      <div class="box">
+          <i class='bx bxs-map'></i>
+          <h2>Enter Pick-Up Location</h2>
+          <p>Enter the location you are leaving from </p>
+      </div>
+
+      <div class="box">
+          <i class='bx bxs-calendar-check' ></i>
+          <h2>Enter Drop Location</h2>
+          <p>Enter the location where you are going to</p>
+      </div>
+
+      <div class="box bb">
+          <i class='bx bx-calendar-star'></i>
+          <h2>Find a ride</h2>
+          <p>Submit to see the rides availabe</p>
+      </div>
+  </div>
+</section>
+<%- include('partials/footer') %>

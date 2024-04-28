@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+<h1 style="margin-top: 150px;">Register</h1>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://cdn.pixabay.com/photo/2014/04/03/10/27/car-310523__340.png" height="130" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form action="/register" method="POST">
+      <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name">
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="Email">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+      <br />
+      <input type="radio" class="fadeIn fourth" name="role" value="User">User
+      <input type="radio" class="fadeIn fourth" name="role" value="Agency">Agency
+      <br />
+      <input type="submit" class="fadeIn fourth">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <p>Already have and account ? <a href="/login">Login</a> </p>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

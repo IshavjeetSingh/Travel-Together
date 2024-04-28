@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<h1 style="margin-top: 150px;">Update This Car</h1>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="https://cdn.pixabay.com/photo/2014/04/03/10/27/car-310523__340.png" height="120" id="icon" alt="User Icon" />
+    </div>
+
+
+    <form action="/updatethiscar" method="POST">
+      <h4>Model</h4>
+      <input type="text" id="model" name="model" value="<%=car.model%>">
+
+      <h4>Number</h4>
+      <input type="text" id="number" name="number" value="<%=car.number%>">
+
+      <h4>Rent</h4>
+      <input type="text" id="rent" name="rent" value="<%=car.rent%>">
+
+      <h4>Current Status</h4>
+      <p><%=car.status%></p>
+
+      <h4>Choose new Status </h4>
+      <input type="radio" class="fadeIn fourth" name="status" value="Booked">Booked
+      <input type="radio" class="fadeIn fourth" name="status" value="Available">Available
+
+      <h4>Capacity</h4>
+      <input type="text" id="capacity" name="capacity" value="<%=car.capacity%>">
+      <input type="hidden" id="customer" name="customer" value="<%=car.customer%>">
+      <button role="button" type="submit" value="<%=car._id%>" name="update" class="fadeIn fourth btn btn-primary">Update</button>
+
+    </form>
+
+  </div>
+</div>
+<a role="button" class="btn btn-primary" href="/agencydashboard">Dashboard</a>
+<%- include('partials/footer') %>

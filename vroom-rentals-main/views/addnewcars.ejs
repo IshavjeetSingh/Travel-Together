@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+  <h1 style="margin-top: 150px;">Add new Car</h1>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/27/car-310523__340.png" height="130" id="icon" alt="User Icon" />
+      </div>
+
+      <!-- Login Form -->
+      <form action="/addnewcars" method="POST">
+        <input type="text" id="model" class="fadeIn second" name="model" placeholder="Model">
+        <input type="text" id="number" class="fadeIn second" name="number" placeholder="Number">
+        <input type="text" id="capacity" class="fadeIn third" name="capacity" placeholder="Capacity">
+        <input type="text" id="rent" class="fadeIn second" name="rent" placeholder="Rent">
+        
+        <input type="submit" class="fadeIn fourth" value="Add Car">
+      </form>
+
+
+
+    </div>
+  </div>
+<a role="button" class="btn btn-primary" href="/agencydashboard">Dashboard</a>
+<%- include('partials/footer') %>
